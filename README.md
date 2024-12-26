@@ -32,7 +32,7 @@ A React-based application for viewing and editing Markdown files, built with Vit
 
 ## Installation and Usage
 
-1. Clone the repository: `git clone https://github.com/your-username/github-markdown-viewer.git`
+1. Clone the repository: `git clone https://github.com/venkatmidhunmareedu/github-readme-viewer.git`
 2. Install dependencies: `npm install` or `yarn install`
 3. Start the development server: `npm run dev` or `yarn dev`
 4. Open the application in your web browser: `http://localhost:3000`
