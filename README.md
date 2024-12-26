@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Github Markdown Viewer
+![image-alt-text](screenshots/home.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based application for viewing and editing Markdown files, built with Vite and TypeScript.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Markdown editor with preview with exact github styles.
+* Support for GitHub Flavored Markdown (GFM) using `remark-gfm`.
+* Copy to clipboard functionality.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* Tremor UI
+* Remixicon
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* `src`: Source code directory
+	+ `App.tsx`: Main application component
+	+ `store`: Global store for managing state
+	+ `components`: Reusable UI components
+* `public`: Public assets directory
+	+ `index.html`: Entry point for the application
+* `tailwind.config.js`: Tailwind CSS configuration file
+* `vite.config.ts`: Vite configuration file
+* `tsconfig.json`: TypeScript configuration file
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation and Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository: `git clone https://github.com/your-username/github-markdown-viewer.git`
+2. Install dependencies: `npm install` or `yarn install`
+3. Start the development server: `npm run dev` or `yarn dev`
+4. Open the application in your web browser: `http://localhost:3000`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Contributing
+
+Contributions are welcome! Please submit a pull request with a clear description of the changes made.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
